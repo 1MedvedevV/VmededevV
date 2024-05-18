@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.scene {
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    position: relative;
+    background-color: #87CEEB;
+    transform: translate3d(0, 0, 0);
+}
+
+.layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: auto 145px;
+    z-index: 1;
+}
+
+.layer-1 {
+    background: url('https://raw.githack.com/1MedvedevV/VmededevV/main/layer5.png') 0 100% repeat-x;
+    animation: animation_layer1 linear 30s infinite both;
+}
+
+.layer-2 {
+    background: url('https://raw.githack.com/1MedvedevV/VmededevV/main/layer4.png') 0 100% repeat-x;
+    animation: animation_layer2 linear 55s infinite both;
+}
+
+.layer-3 {
+    background: url('https://raw.githack.com/1MedvedevV/VmededevV/main/layer3.png') 0 100% repeat-x;
+    animation: animation_layer3 linear 75s infinite both;
+}
+
+.layer-4 {
+    background: url('https://raw.githack.com/1MedvedevV/VmededevV/main/layer2.png') 0 100% repeat-x;
+    animation: animation_layer4 linear 95s infinite both;
+}
+
+.layer-5 {
+    background: url('https://raw.githack.com/1MedvedevV/VmededevV/main/layer1.png') 0 100% repeat-x;
+    animation: animation_layer5 linear 120s infinite both;
+}
+
+.moving-object {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: auto 75px;
+    z-index: 1;
+}
+
+.object-1 {
+    background: url('https://raw.githack.com/1MedvedevV/VmededevV/main/object1.png') 0 100% no-repeat;
+    animation: animation_object1 linear 10s infinite both;
+}
+
+.object-2 {
+    background: url('https://raw.githack.com/1MedvedevV/VmededevV/main/object2.png') 0 100% no-repeat;
+    animation: animation_object2 linear 15s infinite both;
+}
+
+@keyframes animation_layer1 {
+    0% { background-position: 2765px 100%; }
+    100% { background-position: 550px 100%; }
+}
+
+@keyframes animation_layer2 {
+    0% { background-position: 2765px 100%; }
+    100% { background-position: 550px 100%; }
+}
+
+@keyframes animation_layer3 {
+    0% { background-position: 2765px 100%; }
+    100% { background-position: 550px 100%; }
+}
+
+@keyframes animation_layer4 {
+    0% { background-position: 2765px 100%; }
+    100% { background-position: 550px 100%; }
+}
+
+@keyframes animation_layer5 {
+    0% { background-position: 2765px 100%; }
+    100% { background-position: 550px 100%; }
+}
+
+@keyframes animation_object1 {
+    0% { background-position: -300px 100%; }
+    100% { background-position: 2000px 100%; }
+}
+
+@keyframes animation_object2 {
+    0% { background-position: -300px 100%; }
+    100% { background-position: 2000px 100%; }
+}
